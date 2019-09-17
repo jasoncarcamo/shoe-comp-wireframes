@@ -1,0 +1,183 @@
+
+body{
+    font-size: 18px;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+}
+
+#header-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+#header-nav li{
+    list-style: none;
+}
+
+#header-nav li *{
+    text-decoration: none;
+}
+
+.logging-container{
+    display: flex;
+    width: 10em;
+    justify-content: space-evenly;
+    margin-left: auto;
+    text-align: right;
+}
+
+.logging-link{
+    padding-right: 1em;
+}
+
+#header-nav > h2{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto .5em auto;
+}
+
+
+/*Checkout button section*/
+#cart-container{
+    position: fixed;
+    top: 5em;
+    right: 0;
+    margin-left: auto;
+    width: 5em;
+    padding-right: 2em;
+}
+
+#cart-amount{
+    position: relative;
+    top: .2em;
+    padding: 0 1em;
+    margin: 0 auto;
+    font-size: 1.8em;
+}
+
+#cart-icon{
+    display: block;
+    font-size: 1.6em;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#checkout-container{
+    display: none;
+}
+
+#checkout-container > div{
+    width: 1em;
+    height: 1em;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    background-color: black;
+    z-index: -1;
+}
+
+#checkout-container > span {
+    display: block;
+    position: relative;
+    right: 1.2em;
+    width: 7em;
+    height: 2.5em;
+    padding-top: 1em;
+    margin-top: -.5em;
+    background-color: black;
+    z-index: 2;
+}
+
+.to-checkout{
+    display: block;
+    width: 5em;
+    height: 1.5em;
+    margin: 0 auto 2em auto;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 1em;
+    border: .1em solid white;
+}
+
+
+/*Nav links section*/
+#nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#nav-links *{
+    color: black;
+}
+
+
+#reg-section{
+    margin: 3em auto;
+}
+
+#reg-form{
+    width: 85%;
+    margin: 0 auto;
+}
+
+#reg-form > fieldset{
+    display: flex;
+    margin: 0 auto;
+    width: 13em;
+    flex-direction: column;
+}
+
+
+#reg-form > fieldset > label{
+    display: block;
+    width: 11em;
+    font-size: 1em;
+    margin: .5em auto;
+}
+
+#reg-form > fieldset > input{
+    display: block;
+    height: 2em;
+    margin: .5em auto;
+    font-size: 1em;
+    border: 1px solid black;
+}
+
+.reg_pass_error{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reg_passMatch{
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+}
+
+
+#reg-submit{
+    display: block;
+    margin: 1.5em auto 0 auto;
+    width: 6em;
+    height: 3em;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 770px){
+    #reg-form > fieldset{
+        width: 18em;
+    }
+}

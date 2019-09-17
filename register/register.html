@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="./style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/6f089298a1.js" async></script>
+    </head>
+    <body>
+        <header>            
+            <nav id="header-nav">
+                <ul class="logging-container">
+                    <li><a href="/register" class="logging-link">Sign Up</a></li>
+                    <li><a href="/login" class="logging-link">Log In</a></li>
+                </ul>
+                
+                <h2>Icon</h2>
+
+                <ul id="nav-links">
+
+                    <li><a href="/">Home</a></li>
+
+                    <li>
+                        <a href="/shop">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="reg-section">
+            <form id="reg-form">
+                <fieldset>
+                    <label for="reg-first_name">First name: </label>
+                    <input id="reg-first_name" type="text" required></input>
+
+                    <label for="reg-lat-name">Last name: </label>
+                    <input id="reg-last-name" type="text" required></input>
+
+                    <label for="reg-email">Email: </label>
+                    <input id="reg-email" type="email" required></input>
+
+                    <label for="reg-password">Password: </label>
+                    <input id="reg-password" type="password" required></input>
+
+                    <label for="reg_pass_match">Retype password: </label>
+                    <input id="reg_pass_match" type="password" onChange={this.handlePasswordConfirm} required></input>
+                    
+                    <button id="reg-submit" type="submit">Register</button>
+                    
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>

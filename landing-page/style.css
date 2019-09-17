@@ -1,0 +1,338 @@
+
+body{
+    font-size: 18px;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+}
+
+#header-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+#header-nav li{
+    list-style: none;
+}
+
+#header-nav li *{
+    text-decoration: none;
+}
+
+.logging-container{
+    display: flex;
+    width: 10em;
+    justify-content: space-evenly;
+    margin-left: auto;
+    text-align: right;
+}
+
+.logging-link{
+    padding-right: 1em;
+}
+
+#header-nav > h2{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto .5em auto;
+}
+
+
+/*Checkout button section*/
+#cart-container{
+    position: fixed;
+    top: 5em;
+    right: 0;
+    margin-left: auto;
+    width: 5em;
+    padding-right: 2em;
+}
+
+#cart-amount{
+    position: relative;
+    top: .2em;
+    padding: 0 1em;
+    margin: 0 auto;
+    font-size: 1.8em;
+}
+
+#cart-icon{
+    display: block;
+    font-size: 1.6em;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#checkout-container{
+    display: none;
+}
+
+#checkout-container > div{
+    width: 1em;
+    height: 1em;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    background-color: black;
+    z-index: -1;
+}
+
+#checkout-container > span {
+    display: block;
+    position: relative;
+    right: 1.2em;
+    width: 7em;
+    height: 2.5em;
+    padding-top: 1em;
+    margin-top: -.5em;
+    background-color: black;
+    z-index: 2;
+}
+
+.to-checkout{
+    display: block;
+    width: 5em;
+    height: 1.5em;
+    margin: 0 auto 2em auto;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 1em;
+    border: .1em solid white;
+}
+
+
+/*Nav links section*/
+#nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#nav-links *{
+    color: black;
+}
+
+/*Landing page*/
+#landing-page-section{
+    margin: 5em auto;
+    padding: 0;
+}
+
+#landing-page-section > section{
+    margin: 5em auto;
+}
+
+
+/*Shoe display section*/
+
+#shoe-display-section{
+    padding: 0;
+    margin: 2em auto;
+}
+
+#shoe-display-container{
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.landing-page-SVG{
+    display: block;
+    width: 45em;
+    padding: 2em 0;
+    height: 25em;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+#shop-now-button{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 7em;
+    width: 6em;
+    height: 2.5em;
+    border-radius: 5em;
+    font-size: 1.3em;
+    background-color: white;
+    padding: 1em 0 0 1.8em;
+    text-decoration: none;
+    border: .3em solid black;
+    color: black;
+}
+
+
+/*Features section - landing page*/
+
+#features-section{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#features-container{
+    width: 100%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+#features-container li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 20em;
+}
+
+#features-cart-icon{
+    display: block;
+    margin: 0 auto;
+    font-size: 5em;
+}
+
+
+#features-color-icon{
+    display: block;
+    margin: 0 auto;
+    font-size: 5em;
+}
+
+#features-wifi-icon{
+    display: block;
+    margin: 0 auto;
+    font-size: 5em;
+}
+
+#features-container li h2{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#features-container li p{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+/*Third section*/
+
+#third-section{
+    display: flex;
+}
+
+.third-section-SVG{
+    width: 50%;
+    height: 20em;
+}
+
+#third-section p{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 770px){
+    .landing-page-SVG{
+        width: 100%;
+        height: 20em;
+        padding: 0 ;
+    }
+
+    /*Features section*/
+
+    #features-container{
+        grid-template: 1fr 1fr 1fr / 1fr;
+    }
+
+    /*Third section mobile*/
+
+    #third-section{
+        flex-direction: column;
+    }
+
+    .third-section-SVG{
+        width: 100%;
+    }
+
+    #third-section p {
+        margin: 5em auto;
+    }
+}  
+
+/*Shoes examples section*/
+#shoe-examples-section{
+    padding: 0;
+    margin: 5em auto;
+}
+
+#shoe-examples-section ul{
+    display: flex;
+    padding: 0;
+}
+
+.shoe-container{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.shoe-container p{
+    width: 40%;
+    text-align: center;
+    margin: 3em auto;
+}
+
+.shoe-example-SVG{
+    display: block;
+    width: 20em;
+    height: 20em;
+    margin: 1em auto 2em auto;
+}
+
+#shoes-selector{
+    display: flex;
+    width: 50%;
+    font-size: 1.5em;
+    margin: 1em auto;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.get-started-button{
+    display: block;
+    width: 6em;
+    height: 2.5em;
+    border-radius: 5em;
+    margin: 0 auto;
+    padding: 1em 0 0 1.4em;
+    font-size: 1.3em;
+    border: .3em solid black;
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 770px){
+    .landing-page-SVG{
+        
+    }
+
+    /*Shoe example mobile section*/
+    .shoe-example-SVG{
+        width: 15em;
+        padding: 0;
+        height: 13em;
+    }
+}
